@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>マゴノテlink - 依頼作成・編集</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <a href="./index.html" class="back-link">←</a>
+      <div class="header-title">依頼作成・編集</div>
+      <a href="./account.html"><img src="./images/icon_user.png" alt="アカウント" class="header-icon"></a>
+    </header>
+    <main class="app-content">
+      <a href="./job_create.html" class="btn btn-add">+ 依頼を追加する</a>
+      <div class="card">
+        <div class="card-row">
+          <div>
+            <div class="card-title">浜田市</div>
+            <div class="card-title">草刈り</div>
+            <div class="card-price">1,000円</div>
+          </div>
+          <a href="./job_edit.html"><img src="./images/icon_edit.png" alt="編集" class="edit-icon"></a>
+        </div>
+        <div style="height: 60px; background-color: #e5e5ea; border-radius: 8px; margin-top: 8px;"></div>
+        <button type="button" class="btn btn-delete" onclick="confirmDelete()" style="margin-top: 8px;">
+          <img src="./images/icon_trash.png" alt="削除" class="icon-small" style="vertical-align: middle;"> 削除
+        </button>
+      </div>
+    </main>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

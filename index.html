@@ -1,12 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>準備中</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>マゴノテlink - ホーム</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
-<body style="font-family:sans-serif;text-align:center;margin-top:30vh">
-<h1>準備中</h1>
-<p>このページは、チームのアプリを公開すると入れ替わります。</p>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <div class="header-title">マゴノテlink</div>
+      <a href="./account.html"><img src="./images/icon_user.png" alt="アカウント" class="header-icon"></a>
+    </header>
+    <main class="app-content" style="justify-content: center; gap: 24px;">
+      <a href="./job_manage.html" class="btn btn-primary" style="padding: 24px; font-size: 18px;">依頼作成一覧</a>
+      <a href="./job_list.html" class="btn btn-primary" style="padding: 24px; font-size: 18px;">依頼一覧</a>
+    </main>
+    <nav class="app-footer-nav">
+      <a href="./reservation_history.html" class="footer-btn">予約履歴</a>
+      <a href="./contact_list.html" class="footer-btn">連絡</a>
+    </nav>
+  </div>
+  <script src="./script.js"></script>
 </body>
 </html>
