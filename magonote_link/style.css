@@ -1,0 +1,44 @@
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: sans-serif; background-color: #f5f5f5; color: #333; display: flex; flex-direction: column; min-height: 100vh; }
+header { display: flex; justify-content: space-between; align-items: center; padding: 10px 15px; background-color: #fff; border-bottom: 1px solid #ddd; }
+header h1 { font-size: 1.2rem; }
+.icon-header { width: 30px; height: 30px; background-color: #ccc; border-radius: 50%; display: inline-block; }
+.icon-large { width: 80px; height: 80px; background-color: #ccc; border-radius: 50%; display: block; margin: 0 auto; }
+.icon-small { width: 24px; height: 24px; background-color: #ccc; display: inline-block; vertical-align: middle; }
+main { padding: 15px; flex-grow: 1; }
+.main-buttons { display: flex; flex-direction: column; gap: 15px; margin-top: 50px; }
+.btn-main, .btn-primary, .btn-danger { width: 100%; padding: 15px; font-size: 1rem; border: none; border-radius: 5px; cursor: pointer; }
+.btn-main { background-color: #ddd; color: #000; }
+.btn-primary { background-color: #333; color: #fff; margin-top: 15px; }
+.btn-danger { background-color: #eee; color: #d00; border: 1px solid #d00; margin-top: 15px; }
+.btn-small { padding: 5px 10px; background-color: #333; color: #fff; border: none; border-radius: 3px; cursor: pointer; }
+footer { display: flex; justify-content: space-around; padding: 10px; background-color: #fff; border-top: 1px solid #ddd; }
+.btn-footer { padding: 10px; flex-grow: 1; margin: 0 5px; background-color: #eee; border: none; cursor: pointer; }
+.card { background: #fff; padding: 15px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ddd; }
+.card-header { display: flex; justify-content: space-between; margin-bottom: 10px; }
+.search-bar { display: flex; align-items: center; gap: 10px; margin-bottom: 15px; background: #fff; padding: 10px; border-radius: 5px; border: 1px solid #ddd; }
+.search-bar input { flex-grow: 1; border: none; outline: none; }
+.detail-list { list-style: none; background: #fff; padding: 15px; border-radius: 5px; border: 1px solid #ddd; }
+.detail-list li { margin-bottom: 10px; }
+.map-area { background-color: #ddd; height: 200px; display: flex; justify-content: center; align-items: center; margin: 15px 0; border-radius: 5px; }
+.map-area img { max-width: 100%; max-height: 100%; opacity: 0; }
+.account-form, .edit-form { background: #fff; padding: 15px; border-radius: 5px; border: 1px solid #ddd; }
+.account-form label, .edit-form label { display: block; margin-top: 10px; font-weight: bold; }
+.account-form input, .edit-form input, textarea { width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 3px; }
+textarea { height: 100px; resize: none; margin-top: 15px; }
+.profile-area { text-align: center; margin-bottom: 20px; }
+.deadline { color: #d00; font-weight: bold; }
+.card-actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 10px; }
+.rating { text-align: center; font-size: 2rem; margin: 20px 0; }
+.contact-info { display: flex; align-items: center; gap: 10px; }
+.status-online { width: 10px; height: 10px; background-color: green; border-radius: 50%; }
+.status-offline { width: 10px; height: 10px; background-color: #ccc; border-radius: 50%; }
+.chat-title { text-align: center; margin-bottom: 15px; }
+.chat-area { display: flex; flex-direction: column; gap: 10px; margin-bottom: 60px; }
+.bubble { padding: 10px 15px; border-radius: 15px; max-width: 70%; }
+.bubble-receive { background-color: #fff; border: 1px solid #ddd; align-self: flex-start; }
+.bubble-send { background-color: #333; color: #fff; align-self: flex-end; }
+.chat-input { display: flex; align-items: center; gap: 10px; padding: 10px; background: #fff; position: fixed; bottom: 0; left: 0; right: 0; border-top: 1px solid #ddd; }
+.chat-input input { flex-grow: 1; padding: 8px; border: 1px solid #ccc; border-radius: 20px; }
+.btn-send { background: none; border: none; cursor: pointer; }

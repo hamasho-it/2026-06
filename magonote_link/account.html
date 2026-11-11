@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アカウント設定画面 - マゴノテlink</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="./index.html"><img src="./images/icon_home.png" alt="戻る" class="icon-header"></a>
+        <h1>アカウント設定画面</h1>
+        
+    </header>
+    <main>
+        
+        <div class="profile-area">
+            <img src="./images/icon_user.png" alt="プロフィール" class="icon-large">
+            <img src="./images/icon_edit.png" alt="編集" class="icon-small">
+        </div>
+        <form class="account-form">
+            <label>名前 <img src="./images/icon_edit.png" alt="編集" class="icon-small"></label>
+            <input type="text" value="利用者A" readonly>
+            
+            <label>メールアドレス <img src="./images/icon_edit.png" alt="編集" class="icon-small"></label>
+            <input type="email" value="user@example.com" readonly>
+            
+            <label>年齢 <img src="./images/icon_edit.png" alt="編集" class="icon-small"></label>
+            <input type="number" value="70" readonly>
+            
+            <label>パスワード <img src="./images/icon_edit.png" alt="編集" class="icon-small"></label>
+            <input type="password" value="********" readonly>
+        </form>
+    
+    </main>
+    
+</body>
+</html>
