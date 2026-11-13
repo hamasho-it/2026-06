@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>依頼作成・編集 - マゴノテlink</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="./index.html"><img src="./images/icon_home.png" alt="戻る" class="icon-header"></a>
+        <h1>依頼作成・編集</h1>
+        <a href="./account.html"><img src="./images/icon_user.png" alt="アカウント" class="icon-header"></a>
+    </header>
+    <main>
+        
+        <button onclick="location.href='./job_create.html'" class="btn-primary">依頼を追加する</button>
+        <div class="card">
+            <div class="card-header">
+                <h3>草刈り</h3>
+                <a href="./job_edit.html"><img src="./images/icon_edit.png" alt="編集" class="icon-small"></a>
+            </div>
+            <p>浜田市○○町○-○</p>
+            <p>1,000円</p>
+        </div>
+        <button onclick="confirm('削除しますか？')" class="btn-danger"><img src="./images/icon_trash.png" alt="削除" class="icon-small"> 削除</button>
+    
+    </main>
+    
+</body>
+</html>

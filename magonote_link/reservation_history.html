@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>予約履歴 - マゴノテlink</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="./index.html"><img src="./images/icon_home.png" alt="戻る" class="icon-header"></a>
+        <h1>予約履歴</h1>
+        <a href="./account.html"><img src="./images/icon_user.png" alt="アカウント" class="icon-header"></a>
+    </header>
+    <main>
+        
+        <div class="card">
+            <div onclick="location.href='./reservation_detail.html'">
+                <p class="deadline">期日まで残り1日</p>
+                <h3>草刈り</h3>
+                <p>1,000円</p>
+            </div>
+            <div class="card-actions">
+                <a href="./contact_list.html"><img src="./images/icon_chat.png" alt="チャット" class="icon-small"></a>
+                <button onclick="location.href='./review.html'" class="btn-small">評価する</button>
+            </div>
+        </div>
+    
+    </main>
+    
+</body>
+</html>
