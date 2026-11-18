@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>評価画面 - マゴノテlink</title>
-    <link rel="stylesheet" href="./style.css">
-    <script src="./script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>マゴノテlink - 評価画面</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
-        <a href="./reservation_history.html"><img src="./images/icon_home.png" alt="戻る" class="icon-header"></a>
-        <h1>評価画面</h1>
-        <a href="./account.html"><img src="./images/icon_user.png" alt="アカウント" class="icon-header"></a>
+  <div class="app-container">
+    <header class="app-header">
+      <a href="./reservation_history.html" class="back-link">←</a>
+      <div class="header-title">評価画面</div>
+      <a href="./account.html"><img src="./images/icon_user.png" alt="アカウント" class="header-icon"></a>
     </header>
-    <main>
-        
-        <div class="rating">
-            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-        </div>
-        <textarea placeholder="コメントを入力..."></textarea>
-        <button onclick="location.href='./reservation_history.html'" class="btn-primary">評価を決定する</button>
-    
+    <main class="app-content" style="align-items: center;">
+      <div class="star-rating">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+      </div>
+      <textarea class="comment-textarea" placeholder="コメントを書く..."></textarea>
+      <a href="./reservation_history.html" class="btn btn-action" onclick="alert('評価を決定しました');">評価を決定する</a>
     </main>
-    
+  </div>
+  <script src="./script.js"></script>
 </body>
 </html>

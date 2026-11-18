@@ -1,40 +1,31 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>連絡画面 - マゴノテlink</title>
-    <link rel="stylesheet" href="./style.css">
-    <script src="./script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>マゴノテlink - 連絡画面</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
-        <a href="./index.html"><img src="./images/icon_home.png" alt="ホーム" class="icon-header"></a>
-        <h1>連絡画面</h1>
-        <a href="./account.html"><img src="./images/icon_user.png" alt="アカウント" class="icon-header"></a>
+  <div class="app-container">
+    <header class="app-header">
+      <a href="./index.html"><img src="./images/icon_home.png" alt="ホーム" class="header-icon"></a>
+      <div class="header-title">連絡画面</div>
+      <a href="./account.html"><img src="./images/icon_user.png" alt="アカウント" class="header-icon"></a>
     </header>
-    <main>
-        
-        <div class="card contact-card" onclick="location.href='./message.html'">
-            <div class="contact-info">
-                <span class="status-online"></span>
-                <h3>○○さん</h3>
-            </div>
-        </div>
-        <div class="card contact-card" onclick="location.href='./message.html'">
-            <div class="contact-info">
-                <span class="status-offline"></span>
-                <h3>△△さん</h3>
-            </div>
-        </div>
-        <div class="card contact-card" onclick="location.href='./message.html'">
-            <div class="contact-info">
-                <span class="status-offline"></span>
-                <h3>□□さん</h3>
-            </div>
-        </div>
-    
+    <main class="app-content">
+      <a href="./message.html" class="contact-item">
+        <span>○○さん</span>
+        <span class="online-badge"></span>
+      </a>
+      <a href="./message.html" class="contact-item">
+        <span>△△さん</span>
+      </a>
+      <a href="./message.html" class="contact-item">
+        <span>□□さん</span>
+      </a>
     </main>
-    
+  </div>
+  <script src="./script.js"></script>
 </body>
 </html>

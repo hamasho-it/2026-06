@@ -1,31 +1,26 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ホーム画面 - マゴノテlink</title>
-    <link rel="stylesheet" href="./style.css">
-    <script src="./script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>マゴノテlink - ホーム</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
-        
-        <h1>ホーム画面</h1>
-        <a href="./account.html"><img src="./images/icon_user.png" alt="アカウント" class="icon-header"></a>
+  <div class="app-container">
+    <header class="app-header">
+      <div class="header-title">マゴノテlink</div>
+      <a href="./account.html"><img src="./images/icon_user.png" alt="アカウント" class="header-icon"></a>
     </header>
-    <main>
-        
-        <div class="main-buttons">
-            <button onclick="location.href='./job_manage.html'" class="btn-main">依頼作成一覧</button>
-            <button onclick="location.href='./job_list.html'" class="btn-main">依頼一覧</button>
-        </div>
-    
+    <main class="app-content" style="justify-content: center; gap: 24px;">
+      <a href="./job_manage.html" class="btn btn-primary" style="padding: 24px; font-size: 18px;">依頼作成一覧</a>
+      <a href="./job_list.html" class="btn btn-primary" style="padding: 24px; font-size: 18px;">依頼一覧</a>
     </main>
-    
-    <footer>
-        <button onclick="location.href='./reservation_history.html'" class="btn-footer">予約履歴</button>
-        <button onclick="location.href='./contact_list.html'" class="btn-footer">連絡</button>
-    </footer>
-    
+    <nav class="app-footer-nav">
+      <a href="./reservation_history.html" class="footer-btn">予約履歴</a>
+      <a href="./contact_list.html" class="footer-btn">連絡</a>
+    </nav>
+  </div>
+  <script src="./script.js"></script>
 </body>
 </html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>マゴノテlink - 予約内容確認</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <a href="./reservation_history.html" class="back-link">←</a>
+      <div class="header-title">予約内容確認</div>
+      <a href="./account.html"><img src="./images/icon_user.png" alt="アカウント" class="header-icon"></a>
+    </header>
+    <main class="app-content">
+      <div class="detail-list">
+        <div class="detail-item">
+          <span class="detail-label">時給</span>
+          <span class="detail-value">1,000円</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">作業内容</span>
+          <span class="detail-value">草刈り</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">指定時間</span>
+          <span class="detail-value">なし</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">作業場所</span>
+          <span class="detail-value">浜田市○○町○-○</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">支払方法</span>
+          <span class="detail-value">現金</span>
+        </div>
+      </div>
+      <div class="map-container">
+        <img src="./images/map_sample.png" alt="マップ" class="map-image">
+      </div>
+      <a href="./reservation_history.html" class="btn btn-action" onclick="alert('予約を取り消しました');">予約を取り消す</a>
+    </main>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

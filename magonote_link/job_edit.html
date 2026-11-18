@@ -1,33 +1,62 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>依頼編集画面 - マゴノテlink</title>
-    <link rel="stylesheet" href="./style.css">
-    <script src="./script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>マゴノテlink - 依頼編集画面</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
-        <a href="./job_manage.html"><img src="./images/icon_home.png" alt="戻る" class="icon-header"></a>
-        <h1>依頼編集画面</h1>
-        <a href="./account.html"><img src="./images/icon_user.png" alt="アカウント" class="icon-header"></a>
+  <div class="app-container">
+    <header class="app-header">
+      <a href="./job_manage.html" class="back-link">←</a>
+      <div class="header-title">依頼編集画面</div>
+      <a href="./account.html"><img src="./images/icon_user.png" alt="アカウント" class="header-icon"></a>
     </header>
-    <main>
-        
-        <form class="edit-form">
-            <label>時給: <input type="text" value="1,000円"> <img src="./images/icon_edit.png" class="icon-small"></label>
-            <label>作業内容: <input type="text" value="草刈り"> <img src="./images/icon_edit.png" class="icon-small"></label>
-            <label>指定時間: <input type="text" value="なし"> <img src="./images/icon_edit.png" class="icon-small"></label>
-            <label>作業場所: <input type="text" value="サンプル県サンプル市サンプル町1-1"> <img src="./images/icon_edit.png" class="icon-small"></label>
-            <label>支払方法: <input type="text" value="現金"> <img src="./images/icon_edit.png" class="icon-small"></label>
-        </form>
-        <div class="map-area">
-            <img src="./images/map_sample.png" alt="マップ">
+    <main class="app-content">
+      <div class="detail-list">
+        <div class="detail-item">
+          <span class="detail-label">時給</span>
+          <div class="detail-value">
+            <span>1,000円</span>
+            <img src="./images/icon_edit.png" alt="編集" class="edit-icon">
+          </div>
         </div>
-        <button onclick="location.href='./job_manage.html'" class="btn-primary">編集を確定する</button>
-    
+        <div class="detail-item">
+          <span class="detail-label">作業内容</span>
+          <div class="detail-value">
+            <span>草刈り</span>
+            <img src="./images/icon_edit.png" alt="編集" class="edit-icon">
+          </div>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">指定時間</span>
+          <div class="detail-value">
+            <span>なし</span>
+            <img src="./images/icon_edit.png" alt="編集" class="edit-icon">
+          </div>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">作業場所</span>
+          <div class="detail-value">
+            <span>浜田市○○町○-○</span>
+            <img src="./images/icon_edit.png" alt="編集" class="edit-icon">
+          </div>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">支払方法</span>
+          <div class="detail-value">
+            <span>現金</span>
+            <img src="./images/icon_edit.png" alt="編集" class="edit-icon">
+          </div>
+        </div>
+      </div>
+      <div class="map-container">
+        <img src="./images/map_sample.png" alt="マップ" class="map-image">
+      </div>
+      <a href="./job_manage.html" class="btn btn-action" onclick="alert('編集を確定しました');">編集を確定する</a>
     </main>
-    
+  </div>
+  <script src="./script.js"></script>
 </body>
 </html>
